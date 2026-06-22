@@ -8,10 +8,16 @@
 
 | Pin | Name | Record |
 |---:|---|---|
-| 22 | ORB | TODO |
-| 43 | ORA | TODO |
+| 22 | ORB | 0.0022 V; instrument OVI recorded as `over`, but ORB static level is near 0 V |
+| 43 | ORA | 0.0014 V; static level near 0 V |
 
 Detailed first-round procedure: `../docs/measurement_plan_round_01.md`, Step 1.
+
+## Interpretation
+
+- ORB and ORA were both measured near 0 V during the first-round static check.
+- Because the instrument still reported OVI, this measurement does not confirm that OVI is triggered by an ORB high level.
+- Treat ORB/ORA interpretation as unresolved until the OR output polarity, sampling state, or LabOne/FPGA OVI path is better understood.
 
 ## Completion Criteria
 

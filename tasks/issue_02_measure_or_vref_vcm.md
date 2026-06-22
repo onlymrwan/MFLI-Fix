@@ -8,14 +8,19 @@
 
 | Item | Pin | Expected Range | Record |
 |---|---:|---|---|
-| AVDD | 49/50/53/54/59/60/63/64 | 1.7-1.9 V | TODO |
-| DRVDD | 10/19/28/37 | 1.7-3.6 V | TODO |
-| VREF | 55 | about 0.99 V in internal 1 V mode | TODO |
-| SENSE | 56 | stable configuration level | TODO |
-| VCM | 57 | about 0.9 V | TODO |
-| RBIAS | 58 | about 10 kOhm to GND when powered off | TODO |
+| AVDD | 49/50/53/54/59/60/63/64 | 1.7-1.9 V | 1.817 V |
+| DRVDD | 10/19/28/37 | 1.7-3.6 V | 1.815 V |
+| VREF | 55 | about 0.99 V in internal 1 V mode | 1.01 V |
+| SENSE | 56 | stable configuration level | 1.818 V |
+| VCM | 57 | about 0.9 V | 0.908 V |
+| RBIAS | 58 | about 10 kOhm to GND when powered off | 5.04 kOhm; `NEEDS-VERIFICATION` |
 
 Detailed first-round procedure: `../docs/measurement_plan_round_01.md`, Steps 2-4.
+
+## Interpretation
+
+- VREF, VCM, AVDD, and DRVDD are close to expected values, so AD9269 global supply/reference is not the leading fault candidate at this stage.
+- RBIAS is lower than the planned about 10 kOhm expectation. It must be rechecked before final ADC replacement decisions, but it does not by itself explain the B-channel-only Pin61/62 rail-out differential fault.
 
 ## Completion Criteria
 

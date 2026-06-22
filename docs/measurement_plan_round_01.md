@@ -145,7 +145,7 @@ measurements/2026-06-21_round_01_measurement_plan.csv
 建议记录字段：
 
 ```text
-date,step,measurement_state,dmm_mode,target,component,pin_or_node,reference_node,expected,measured_value,unit,input_condition,instrument_range,ovi_status,observation,operator_note,source_note
+date,step,measurement_state,dmm_mode,target,component,pin_or_node,reference_node,measurement_direction,expected,measured_value,unit,input_condition,instrument_range,ovi_status,observation,operator_note,source_note
 ```
 
 实测后不要覆盖原计划含义。建议在同一 CSV 的 `measured_value`、`unit`、`observation`、`operator_note` 字段补充结果；若跨日期测量，则新建对应日期 CSV。
