@@ -1,0 +1,16 @@
+*.pdf binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.docx binary
+*.xlsx binary
+*.zip binary
+*.mp4 binary
+*.flv binary
+
+*.md text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf
+*.py text eol=lf
+*.m text eol=lf
+*.tex text eol=lf

@@ -1,0 +1,35 @@
+# Local/editor noise
+.vscode/
+.idea/
+Desktop.ini
+Thumbs.db
+~$*
+*.tmp
+*.bak
+*.swp
+
+# Python/cache artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+
+# Large source media kept locally by default
+media/videos/
+archives/source_packages/*.zip

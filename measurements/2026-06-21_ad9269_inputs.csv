@@ -1,0 +1,5 @@
+date,component,pin,name,measured_voltage_v,derived_common_mode_v,derived_differential_v,condition,source_note
+2026-06-21,AD9269BCPZ-65,51,VIN+A,0.88,0.88,0,input floating or no external signal; recorded before folder organization,docs/repair_status.md
+2026-06-21,AD9269BCPZ-65,52,VIN-A,0.88,0.88,0,input floating or no external signal; recorded before folder organization,docs/repair_status.md
+2026-06-21,AD9269BCPZ-65,61,VIN-B,-0.72,0.91,3.26,input floating or no external signal; recorded before folder organization,docs/repair_status.md
+2026-06-21,AD9269BCPZ-65,62,VIN+B,2.54,0.91,3.26,input floating or no external signal; recorded before folder organization,docs/repair_status.md

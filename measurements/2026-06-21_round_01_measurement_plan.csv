@@ -1,0 +1,14 @@
+date,step,measurement_state,dmm_mode,target,component,pin_or_node,reference_node,expected,measured_value,unit,input_condition,instrument_range,ovi_status,observation,operator_note,source_note
+2026-06-21,0,powered_off,visual_check,input_state,MFLI Signal Input,+V/-V,,no external input connected,,,,,,confirm before power-on,docs/measurement_plan_round_01.md
+2026-06-21,1,powered_on_short,dc_voltage,overrange_output,AD9269BCPZ-65,Pin22 ORB,GND,logic level stable or toggling to be observed,,,,,,record LabOne OVI and front-panel OVI at same time,docs/measurement_plan_round_01.md
+2026-06-21,1,powered_on_short,dc_voltage,overrange_output,AD9269BCPZ-65,Pin43 ORA,GND,logic level stable or toggling to be observed,,,,,,A channel comparison for ORB,docs/measurement_plan_round_01.md
+2026-06-21,2,powered_on_short,dc_voltage,reference,AD9269BCPZ-65,Pin55 VREF,GND,about 0.99 V in internal 1 V mode,,,,,,stop if clearly abnormal,docs/measurement_plan_round_01.md
+2026-06-21,2,powered_on_short,dc_voltage,common_mode,AD9269BCPZ-65,Pin57 VCM,GND,about 0.9 V,,,,,,stop if clearly abnormal,docs/measurement_plan_round_01.md
+2026-06-21,2,powered_on_short,dc_voltage,reference_config,AD9269BCPZ-65,Pin56 SENSE,GND,stable configuration level,,,,,,record as voltage and note if logic-like,docs/measurement_plan_round_01.md
+2026-06-21,3,powered_on_short,dc_voltage,analog_supply,AD9269BCPZ-65,Pins49/50/53/54/59/60/63/64 AVDD,GND,1.7-1.9 V; typical 1.8 V,,,,,,measure accessible pins without slipping probe,docs/measurement_plan_round_01.md
+2026-06-21,3,powered_on_short,dc_voltage,digital_output_supply,AD9269BCPZ-65,Pins10/19/28/37 DRVDD,GND,1.7-3.6 V,,,,,,measure accessible pins without slipping probe,docs/measurement_plan_round_01.md
+2026-06-21,4,powered_off,resistance,bias_resistor,AD9269BCPZ-65,Pin58 RBIAS,GND,about 10 kOhm,,,,,,only after power off; do not use resistance mode when powered,docs/measurement_plan_round_01.md
+2026-06-21,5,powered_off,diode,clamp_compare_a_to_gnd,AD9269BCPZ-65,Pin51/52,0 V,compare forward and reverse drop with B channel,,,,,,record diode drop V or OL,docs/measurement_plan_round_01.md
+2026-06-21,5,powered_off,diode,clamp_compare_a_to_1v82,AD9269BCPZ-65,Pin51/52,1.82 V rail,compare forward and reverse drop with B channel,,,,,,record diode drop V or OL,docs/measurement_plan_round_01.md
+2026-06-21,5,powered_off,diode,clamp_compare_b_to_gnd,AD9269BCPZ-65,Pin61/62,0 V,compare forward and reverse drop with A channel,,,,,,record diode drop V or OL,docs/measurement_plan_round_01.md
+2026-06-21,5,powered_off,diode,clamp_compare_b_to_1v82,AD9269BCPZ-65,Pin61/62,1.82 V rail,compare forward and reverse drop with A channel,,,,,,record diode drop V or OL,docs/measurement_plan_round_01.md
