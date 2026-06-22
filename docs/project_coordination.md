@@ -52,10 +52,11 @@
 - 解释 `status`、`add`、`commit`、`remote`、`push` 等命令的作用、检查方法和回退方式。
 - 提交前检查暂存范围、忽略规则、大文件和敏感资料风险。
 - 给出适合 Windows PowerShell 的命令。
+- 在主对话确认变更范围后，直接执行正常项目管理所需的 `git status`、`git diff`、`git add`、`git commit`、`git push`，用户无需手动操作 PowerShell。
 
 边界：
 
-- 未经用户明确要求，不执行 `git add`、`git commit`、`git push`。
+- 未经主对话确认变更范围，不执行 `git add`、`git commit`、`git push`。
 - 不执行 `git reset --hard`、`git clean -fd`、强制推送或改写历史。
 - 不把视频、zip、密钥、凭据或未确认公开的维修资料上传到 GitHub。
 
