@@ -104,6 +104,7 @@
 
 | 内容 | 文件 |
 |---|---|
+| 当前快速入口 | `docs/current_status.md` |
 | 当前总状态 | `docs/repair_status.md` |
 | 项目调度规则 | `docs/project_coordination.md` |
 | 待办任务 | `tasks/issue_*.md` |
